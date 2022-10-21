@@ -1,17 +1,24 @@
-import React from 'react'
-import { useParams, useNavigate, useLocation } from 'react-router-dom'
-
+import React, { useEffect } from 'react';
+import { Link, useParams, useNavigate, useLocation } from 'react-router-dom';
 
 const Post = () => {
-  const params =useParams()
-  const navigate = useNavigate()
-  const location = useLocation()
-    return (
-        <>
-            <div>Post Number : {params.postId} </div>
-            <button onClick={()=> navigate('/')}>Home</button>
-        </>
-    )
+
+  const params = useParams();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => { 
+    console.log(location);
+  }, [])
+
+  return (
+    <>
+      <div>Post Number : { params.postId } , path :  { location.pathname}</div>
+      {/* <Link to="/"> Home</Link> */ }
+      
+      <button onClick={ ()=> navigate('/')}> Home</button>
+    </>
+  )
 }
 
 export default Post
