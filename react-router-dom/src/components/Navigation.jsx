@@ -7,11 +7,11 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand href="home"> People Locator</Navbar.Brand>
         <Nav className="ms-auto">
-          <NavLink to="/home"> Home</NavLink>
-          <NavLink to="/people"> People</NavLink>
-          <NavLink to="/sign-up"> Sign up</NavLink>
-          <NavLink to="/login"> Login</NavLink>
-          <NavLink to="/about"> About</NavLink>
+          <NavLink to="/home" className='nav-link'> Home</NavLink>
+          <NavLink to="/people" className='nav-link'> People</NavLink>
+          <NavLink to="/sign-up" className='nav-link'> Sign up</NavLink>
+          <NavLink to="/login" className='nav-link'> Login</NavLink>
+          <NavLink to="/about" className='nav-link'> About</NavLink>
         </Nav>
       </Container>
     </Navbar>

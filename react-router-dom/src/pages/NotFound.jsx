@@ -1,10 +1,12 @@
-import React from 'react'
+import { Card } from 'react-bootstrap'
 
 const NotFound = () => {
   return (
-    <div>
-      Not Found
-    </div>
+    <Card className="mt-5 shadow">
+      <Card.Body>
+        <Card.Title className="text-center">ERROR 404: Page Not Found</Card.Title>
+      </Card.Body>
+    </Card>
   )
 }
 
